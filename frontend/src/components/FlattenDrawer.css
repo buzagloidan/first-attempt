@@ -1,0 +1,116 @@
+.flatten-drawer {
+  position: fixed;
+  right: 0;
+  top: 70px;
+  bottom: 0;
+  width: 500px;
+  background-color: white;
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.08);
+}
+
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.drawer-header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.drawer-close {
+  font-size: 28px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.drawer-close:hover {
+  background-color: var(--bg-tertiary);
+}
+
+.drawer-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+}
+
+.markdown-content {
+  color: var(--text-primary);
+  line-height: 1.7;
+}
+
+.markdown-content h1 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: var(--accent);
+}
+
+.markdown-content h2 {
+  font-size: 20px;
+  margin: 24px 0 12px;
+  color: var(--text-primary);
+}
+
+.markdown-content h3 {
+  font-size: 16px;
+  margin: 20px 0 10px;
+  color: var(--text-primary);
+}
+
+.markdown-content p {
+  margin-bottom: 12px;
+  color: var(--text-secondary);
+}
+
+.markdown-content li {
+  margin-left: 20px;
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+  list-style-type: disc;
+}
+
+.markdown-content strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.drawer-footer {
+  display: flex;
+  gap: 8px;
+  padding: 16px 24px;
+  border-top: 1px solid var(--border);
+}
+
+.drawer-btn {
+  flex: 1;
+  padding: 10px 16px;
+  background-color: var(--accent);
+  color: white;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.drawer-btn:hover {
+  background-color: var(--accent-hover);
+}
+

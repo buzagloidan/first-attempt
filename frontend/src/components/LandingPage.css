@@ -1,0 +1,154 @@
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+  padding: 40px 20px;
+}
+
+.landing-content {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.landing-header {
+  text-align: center;
+}
+
+.landing-logo {
+  font-size: 72px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 8px 0;
+  letter-spacing: -1px;
+}
+
+.landing-subtitle {
+  font-size: 18px;
+  color: #4a4a5e;
+  margin: 0;
+  font-weight: 400;
+}
+
+.landing-form {
+  width: 100%;
+}
+
+.landing-input-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.landing-textarea {
+  flex: 1;
+  padding: 20px 24px;
+  font-size: 16px;
+  line-height: 1.6;
+  border: 2px solid #e0e0e8;
+  border-radius: 16px;
+  background-color: white;
+  color: #1a1a2e;
+  resize: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.landing-textarea:focus {
+  outline: none;
+  border-color: #a78bfa;
+  box-shadow: 0 4px 16px rgba(167, 139, 250, 0.15);
+}
+
+.landing-textarea::placeholder {
+  color: #9ca3af;
+}
+
+.landing-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.landing-submit-btn,
+.landing-voice-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.landing-submit-btn {
+  background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%);
+  color: white;
+}
+
+.landing-submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(167, 139, 250, 0.4);
+}
+
+.landing-submit-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.landing-submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.landing-voice-btn {
+  background-color: #4b5563;
+  color: white;
+}
+
+.landing-voice-btn:hover:not(:disabled) {
+  background-color: #374151;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(75, 85, 99, 0.4);
+}
+
+.landing-voice-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .landing-logo {
+    font-size: 56px;
+  }
+
+  .landing-subtitle {
+    font-size: 16px;
+  }
+
+  .landing-content {
+    gap: 40px;
+  }
+
+  .landing-textarea {
+    padding: 16px 20px;
+    font-size: 15px;
+  }
+
+  .landing-submit-btn,
+  .landing-voice-btn {
+    width: 48px;
+    height: 48px;
+  }
+}
+
