@@ -224,12 +224,12 @@ npm run preview      # Preview production build
 
 ### Gemini Models
 
-The default model is `gemini-2.0-flash-exp`. You can configure different models in `backend/src/config.ts`:
+The default model is `gemini-flash-lite-latest`. You can configure different models in `backend/src/config.ts`:
 
 ```typescript
 gemini: {
   apiKey: process.env.GEMINI_API_KEY || '',
-  model: 'gemini-2.0-flash-exp', // or gemini-1.5-pro, etc.
+  model: 'gemini-flash-lite-latest', // e.g., gemini-2.0-flash-exp, gemini-1.5-pro
 }
 ```
 
